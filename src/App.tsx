@@ -3,21 +3,12 @@ import React, { Component } from 'react';
 import Mycomponent from './Mycomponent';
 import Counter from './Counter';
 import './interfaces/index';
-
-class MyPerson implements Person {
-    name?: string | undefined;
-    favoriteNumber?: number | undefined;
-
-    constructor(name: string, favoriteNumber: number) {
-        this.name = name;
-        this.favoriteNumber = favoriteNumber;
-    }
-}
+import Editor from './Editor';
 
 class App extends Component {
-    render() {
-        return <Counter number={0}></Counter>;
-    }
+  render() {
+    return <Editor></Editor>;
+  }
 }
 
 export default App;
